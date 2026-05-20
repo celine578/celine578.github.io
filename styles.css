@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+  background-color: #FAF9F0;
+}
+
+
+  /* NAV */
+.nav-logo {
+  font-family: "raleway";
+  font-weight: 700;
+  font-size: 17px;
+  color: #355749;
+  text-decoration: none;
+  letter-spacing: 0.3px;
+  position: relative;
+  left: 30px;
+  padding: 14px 16px;
+  top: 15px;
+}
+
+.subnav:hover  .subnav-content {
+  display: block;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  right: 85px;
+  z-index: 1;
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav {
+  align-content: center;
+  width: 350px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+ul li {
+  float: right;
+  vertical-align: middle;
+}
+
+ul li a {
+  display: block;
+  color: #355749;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  position: relative;
+  right: 30px;
+  font-size: 16px;
+  transition: transform 0.2s ease;
+  font-family: "raleway";
+}
+
+ul li a:hover {
+  transform: scale(1.5);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+/* HERO */
+
+.hero-eyebrow {
+  font-family: "raleway";
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #414644;
+  opacity: 0.7;
+  margin-bottom: 22px;
+}
+
+.hero {
+  padding: 80px 40px;
+  max-width: 1200px;
+  margin: auto;
+  font-family: "raleway";
+}
+    
+.hero h1 {
+   font-size: 40px;
+   margin-bottom: 20px;
+}
+    
+.hero p {
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+.naam {
+  color: #355749;
+  font-weight: bold;
+}
+
+.verander-tekst {
+  overflow: hidden;
+  height: 1.2rem;
+  position: relative;
+  margin-left:20px;
+
+}
+
+.verander-tekst > span {
+  position: absolute;
+  inset: 0;
+  width: 500px;
+  opacity: 0;
+  animation: veranderTekstAnimatie 12s infinite;
+  font-weight: bold;
+  color: #355749;
+  transform: translateY(115%);
+}
+
+.verander-tekst > span:nth-child(2) {
+  animation-delay: 4s;
+}
+
+.verander-tekst > span:nth-child(3) {
+  animation-delay: 8s;
+}
+
+@keyframes veranderTekstAnimatie {
+  0% { 
+    opacity: 0;
+    transform: translateY(115%);
+   }
+
+  8%,
+  30% { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  38%,
+  100% { 
+    opacity: 0;
+    transform: translateY(-110%)
+   }
+}
+    
+/* PROJECTS */
+
+#projecten {
+  font-family: "raleway";
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #355749;
+  opacity: 0.7;
+  margin-bottom: 15px;
+}
+
+.projects {
+  padding: 60px 40px 0px 40px;
+  max-width: 1200px;
+  margin: auto;
+  font-family: "raleway";
+}
+    
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+    
+.project {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  background: #eee;
+  aspect-ratio: 4/3;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.project:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 16px 40px rgba(53,87,73,0.15);
+}
+    
+.project img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.45s ease;
+}
+    
+.project:hover img {
+  transform: scale(1.06);
+}
+    
+.project-title {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  background: rgba(0,0,0,0.6);
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+/* FOOTER */
+
+
+h6 {
+  position: relative;
+  z-index: -999;
+  font-family: "raleway";
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #414644;
+  opacity: 0.7;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.footer-icons {
+  width: 40px;
+  height: 40px;
+  margin: 5px
+}
+
+.footer {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+path{
+  fill: #355749;
+}
+
+a {
+  text-decoration: none;
+}
+
+#copyright {
+  position: relative;
+  z-index: -999;
+  font-size: 11px;
+  text-transform: none;
+  margin-top: 5px;
+  padding-bottom: 15px;
+}
+
+.footer-lager {
+  margin-top: 115px;
+}
+  
+
+@media(max-width: 600px) {
+  .hero h1 {font-size: 32px;}
+  nav { padding: 16px 20px; }
+  .hero { padding: 60px 20px 50px; }
+  .projects { padding: 40px 20px 80px; }
+  .grid { grid-template-columns: 1fr; }
+}
+
+  
+
+
+
+
+
+
+
+
+
+
