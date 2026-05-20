@@ -1,0 +1,46 @@
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+h1 {
+    font-family: "Raleway";
+    font-size: 60px;
+    color: #355749;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+span {
+    font-family: "lobster two";
+    font-size: 85px;
+    font-weight: 800;
+    color: #355749;
+}
+
+h2 {
+    font-family: "raleway";
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #414644;
+    opacity: 0.7;
+    margin-bottom: 15px;
+    width: 300px;
+    transition: transform 0.2s ease;
+    transform-origin: left center;
+}
+
+h2:hover {
+    transform: scale(1.2);
+    font-weight: 800;
+    color: #355749;
+    opacity: 100;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
