@@ -1,0 +1,124 @@
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+h1 {
+    font-family: "Raleway";
+    font-size: 60px;
+    color: #355749;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+span {
+    font-family: "lobster two";
+    font-size: 85px;
+    font-weight: 800;
+    color: #355749;
+}
+
+/* BACK BUTTON */
+.back-btn {
+    font-family: "raleway";
+    display: inline-flex; 
+    align-items: center; 
+    gap: 8px;
+    text-decoration: none; 
+    color: #355749; 
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    padding: 10px 0;
+}
+
+  .back-btn:hover { 
+    transform: scale(1.2);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: "Raleway";
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 15px;
+    color: #355749;
+}
+
+p {
+    font-family: "raleway";
+    font-size: 17px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 25px;
+
+}
+
+  /* Gallery */
+
+  .gallery {
+    width: 1032px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 45px;
+  }
+
+.gallery .picture img {
+    width: 250px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.gallery .picture{
+    width: 250px;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    display: block;
+    position: relative;
+}
+
+.gallery img:hover {
+     opacity: 0.8;
+}
+
+/* Lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 60px;
+    cursor: pointer;
+}
+
+.project-title {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    background: rgba(0,0,0,0.6);
+    padding: 5px 10px;
+    font-size: 14px;
+    font-family: "raleway";
+}
+
+

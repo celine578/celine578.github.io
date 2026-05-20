@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+  }
+
+body {
+  background-color: #FAF9F0;
+  
+}
+  /* NAV */
+.nav-logo {
+  font-family: "raleway";
+  font-weight: 700;
+  font-size: 17px;
+  color: #355749;
+  text-decoration: none;
+  letter-spacing: 0.3px;
+  position: relative;
+  left: 30px;
+  padding: 14px 16px;
+  top: 30px;
+}
+
+/* HEADER */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+ul li {
+  float: right;
+}
+
+ul li a {
+  display: block;
+  color: #355749;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  position: relative;
+  right: 30px;
+  font-size: 16px;
+  transition: transform 0.2s ease;
+  font-family: "raleway";
+
+}
+
+ul li a:hover {
+  transform: scale(1.2);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* BACK BUTTON */
+.back-btn {
+    font-family: "raleway";
+    display: inline-flex; 
+    align-items: center; 
+    gap: 8px;
+    text-decoration: none; 
+    color: #355749; 
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    padding: 10px 0;
+}
+
+  .back-btn:hover { 
+    transform: scale(1.2);
+    font-size: 14px;
+    font-weight: bold;
+}
+  
+   
+  /* PAGE LAYOUT */
+  .page {
+    max-width: 960px; 
+    margin: auto;
+    padding: 60px 40px 0px;
+    animation: fadeUp 0.6s ease both;
+  }
+   
+  .back-to-homepage { 
+    margin-bottom: 48px; 
+}
+   
+  .project-header { 
+    margin-bottom: 60px; 
+}
+   
+  .project-category {
+    font-size: 11px; 
+    font-weight: 600; 
+    letter-spacing: 3px;
+    text-transform: uppercase; 
+    color: #355749; 
+    opacity: 0.7;
+    margin-bottom: 16px; 
+    font-family: "raleway";
+  }
+   
+
+   
+#titel { 
+    font-family: "raleway";
+    font-weight: 700; 
+    color: #355749; 
+    font-size: 35px;
+}
+   
+  .project-intro {
+    font-size: 17px; 
+    line-height: 1.8; 
+    color: #444;
+    max-width: 620px; 
+    margin-bottom: 32px;
+    font-family: "raleway";
+    margin-top: 20px;
+  }
+   
+  .project-meta {
+    display: flex; 
+    gap: 40px; 
+    flex-wrap: wrap;
+    padding: 24px 0; 
+    border-top: 1px solid rgba(53,87,73,0.12);
+    border-bottom: 1px solid rgba(53,87,73,0.12);
+    font-family: "raleway";
+  }
+   
+  .meta-item label {
+    display: block; 
+    font-size: 11px; 
+    font-weight: 600;
+    letter-spacing: 2px; 
+    text-transform: uppercase;
+    color: #355749; 
+    opacity: 0.6; 
+    margin-bottom: 5px;
+    font-family: "raleway";
+  }
+
+  .meta-item span {
+    font-size: 15px; 
+    font-weight: 500; 
+    color: #1a1a1a;
+    font-family: "raleway";
+  }
+   
+  /* HERO IMAGE */
+  .hero-image {
+    margin: 56px 0;
+    border-radius: 8px; 
+    overflow: hidden;
+    background: #ddd;
+  }
+  .hero-image img {
+    width: 100%; 
+    display: block;
+    aspect-ratio: 13/9; 
+    object-fit: cover;
+  }
+   
+  /* DESCRIPTION */
+  .description { 
+    margin-bottom: 64px; 
+}
+
+  .description h2 {
+    font-size: 13px; 
+    font-weight: 800; 
+    letter-spacing: 3px;
+    text-transform: uppercase; 
+    color: #355749; 
+    opacity: 0.7;
+    margin-bottom: 24px;
+    font-family: "raleway";
+  }
+
+  .description p {
+    font-size: 16px; 
+    line-height: 1.85; 
+    color: #444;
+    max-width: 680px; 
+    margin-bottom: 18px;
+    font-family: "raleway";
+  }
+   
+  /* GALLERY */
+  .gallery h2 {
+    font-size: 13px; 
+    font-weight: 800; 
+    letter-spacing: 3px;
+    text-transform: uppercase; 
+    color: #355749; 
+    opacity: 0.7;
+    font-family: "raleway";
+    margin-bottom: 20px;
+  }
+
+    .gallery {
+    width: 1032px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 45px;
+  }
+
+.gallery .picture img {
+    width: 250px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.gallery .picture{
+    width: 250px;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    display: block;
+    position: relative;
+}
+
+.gallery img:hover {
+     opacity: 0.8;
+}
+
+/* Lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 60px;
+    cursor: pointer;
+}
+
+.project-title {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    background: rgba(0,0,0,0.6);
+    padding: 5px 10px;
+    font-size: 14px;
+    font-family: "raleway";
+}
