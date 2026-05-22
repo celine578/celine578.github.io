@@ -81,8 +81,31 @@
 </header>
 <main>
   <h1><span>C</span>ontact</h1>
+<h2>Benieuwd wat we samen kunnen maken? Stuur een bericht via het forlmulier hieronder.<br> Of stuur een e-mail via: <a id="mail" href="mailto:keetceline@gmail.com">keetceline@gmail.com</a></h2>
 
+<div class="contact-section">
+  <form action="action_page.php" method="post" class="contact-form">
+    <label for="fname">Naam:</label>
+    <input type="text" id="fname" name="firstname" placeholder="Jouw naam.." required>
 
+    <label for="email">E-mail:</label>
+    <input type="text" id="email" name="email" placeholder="Jouw e-mail.." required>
+
+    <label for="subject">Bericht:</label>
+    <textarea id="subject" name="subject" placeholder="Schrijf hier je bericht.." style="height:200px" required></textarea>
+
+    <input type="submit" value="Versturen">
+  </form>
+</div>
+
+<!-- <button onclick="openModal()">Open Bevestigingsscherm</button> -->
+<div id="bevestigingsOverlay" class="overlay">
+  <div class="overlay-content">
+    <h2>Bedankt voor je bericht!</h2>
+    <p>Ik nemen zo snel mogelijk contact met je op.</p>
+    <button onclick="closeModal()">Sluiten</button>
+  </div>
+</div>
 
 </main>
 
