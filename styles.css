@@ -277,11 +277,29 @@ a {
   
 
 @media(max-width: 600px) {
-  .hero h1 {font-size: 32px;}
-  nav { padding: 16px 20px; }
-  .hero { padding: 60px 20px 50px; }
+  .hero h1 {
+    font-size: 30px;
+    display:flex;
+    flex-direction: column;
+  }
+  .hero h1 br{
+    display: none;
+  }
+  .verander-tekst{
+    height: 2.2rem;
+    margin-left: 0px;
+  }
+  .nav { padding: 0px 0px; }
+  /* .a { padding: 5px 6px; margin: 0px } */
+  .ul li a { padding: 5px 6px; margin: 0px }
+  .hero { padding: 60px 20px 0px; }
   .projects { padding: 40px 20px 80px; }
   .grid { grid-template-columns: 1fr; }
+  .img { width: 100%; height: auto; }
+  .footer-lager { padding: 0px 0px; margin-top: 0px; }
+  .body { text-align: center; left: 20px; }
+  .sectionprojects { padding: 40px 20px 10px 0px; }
+  .grid { padding: 12px}
 }
 
   
