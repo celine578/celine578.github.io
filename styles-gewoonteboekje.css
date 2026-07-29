@@ -220,7 +220,6 @@ ul li a:hover {
 }
 
 .gallery .picture{
-    width: 250px;
     margin-left: 2.5px;
     margin-right: 2.5px;
     display: block;
@@ -296,3 +295,43 @@ ul li a:hover {
 .thumb-bar img:focus {
   outline: 2px solid #355749;
 }
+
+
+@media(max-width: 600px) {
+  .hero h1 {
+    font-size: 30px;
+    display:flex;
+    flex-direction: column;
+  }
+
+  .gallery {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 45px;
+    text-align: center;
+  }
+
+  .picture {
+    width: 100%;
+  }
+
+  .body { 
+    text-align: center; 
+    left: 20px; 
+  }
+
+   .grid { 
+    grid-template-columns: 1fr; 
+    padding: 12px;
+  }
+
+  .project-meta {
+
+  }
+
+  .gallery .picture img{
+    width: 100%;
+  }
+
+  }
