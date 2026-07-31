@@ -40,6 +40,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: relative;
 }
 
 nav {
@@ -275,6 +276,8 @@ a {
   margin-top: 115px;
 }
 
+/* HAMBURGER MENU */
+
 .hamburger {
   display: flex;
   background: none;
@@ -293,12 +296,45 @@ a {
   transition: all 0.3s ease;
 } 
 
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+
+
+/* MEDIA */
+
+@media (min-width: 769px) {
+  .hamburger {
+    display: none;
+  }
+
+    .subnav:hover .subnav-content {
+    display: block;
+  }
+}
 
  @media (max-width: 768px) {
   .hamburger {
     display: block;
   }
 
+  @media (hover: none) {
+  ul li a:hover {
+    transform: none;
+    font-weight: normal;
+  }
+}
+
+@media (max-width: 768px) {
   nav {
     display: none;
     width: 100%;
@@ -306,25 +342,60 @@ a {
 
   nav.active {
     display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #FAF9F0;
+    z-index: 999;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
   }
 
   nav ul {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
     gap: 0;
   }
 
   nav li {
-    padding: 1rem 0;
     width: 100%;
+    border-bottom: 1px solid rgba(53,87,73,0.12);
+  }
+
+  nav ul li a {
+    padding: 16px 30px;
+    text-align: left;
+    right: 0;
+    font-size: 17px;
   }
 
   .subnav-content {
-    display: flex;
+    display: none;
     flex-direction: column;
-    padding-left: 1rem;
+    background-color: #f2f0e6;
   }
+
+  .subnav.open .subnav-content {
+    display: flex;
+  }
+
+  .subnav-content a {
+    padding: 14px 45px;
+    font-size: 15px;
+  }
+
+  .subnav > a::after {
+    content: " ▾";
+    font-size: 12px;
+    float: right;
+    transition: transform 0.2s ease;
+  }
+
+  .subnav.open > a::after {
+    transform: rotate(180deg);
+  }
+}
 
     .hero h1 {
     font-size: 30px;

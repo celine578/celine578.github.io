@@ -60,7 +60,7 @@
          d="m 2450.13,2163.51 -47.02,84.94 c -11.54,15.49 -22.13,31.9 -31.47,49.49 -6.16,-5.22 -12.4,-9.6 -18.58,-14.68 -57.72,-112.43 -93.58,-217.5 -111.03,-313.36 69.52,59.55 139,123.24 208.1,193.61" /><path
 </g></g></svg>
   </a>
-  <button class="hamburger" id="hamburger" aria-label="Open menu">
+  <button class="hamburger" id="hamburger" aria-label="Open menu" min-width="250px" max-width="600px">
     <span class="bar"></span>
     <span class="bar"></span>
     <span class="bar"></span>
@@ -152,13 +152,20 @@
 <h6 id="copyright">© 2026 | Celine Keet </h6>
 </footer>
 
+
 <script>
   const hamburger = document.querySelector(".hamburger");
   const nav = document.querySelector("nav");
+  const subnav = document.querySelector(".subnav");
+  const subnavToggle = document.querySelector(".subnav-toggle");
 
   hamburger.addEventListener("click", () => {
     nav.classList.toggle("active");
+    hamburger.classList.toggle("active");
+    subnav.classList.remove("open");
   });
+
+
 </script>
 
 </body>
