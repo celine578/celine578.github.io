@@ -315,6 +315,7 @@ a {
 @media (min-width: 769px) {
   .hamburger {
     display: none;
+
   }
 
     .subnav:hover .subnav-content {
@@ -325,6 +326,7 @@ a {
  @media (max-width: 768px) {
   .hamburger {
     display: block;
+    margin: 50px; 
   }
 
   @media (hover: none) {
@@ -387,7 +389,7 @@ a {
 
   .subnav > a::after {
     content: " ▾";
-    font-size: 12px;
+    font-size: 22px;
     float: right;
     transition: transform 0.2s ease;
   }
@@ -435,6 +437,8 @@ a {
   .body { text-align: center; left: 20px; }
   .sectionprojects { padding: 40px 20px 10px 0px; }
   .grid { padding: 12px}
+  #hamburger { margin: 50px; }
+
 }
 
   
