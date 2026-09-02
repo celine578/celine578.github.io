@@ -267,3 +267,50 @@ ul li a:hover {
     font-family: "raleway";
 }
 
+
+
+
+
+
+
+
+
+
+@media(max-width: 600px) {
+  .hero h1 {
+    font-size: 30px;
+    display:flex;
+    flex-direction: column;
+  }
+
+  .gallery {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 45px;
+    text-align: center;
+  }
+
+  .picture {
+    width: 100%;
+  }
+
+  .body { 
+    text-align: center; 
+    left: 20px; 
+  }
+
+   .grid { 
+    grid-template-columns: 1fr; 
+    padding: 12px;
+  }
+
+  .project-meta {
+
+  }
+
+  .gallery .picture img{
+    width: 100%;
+  }
+
+  }

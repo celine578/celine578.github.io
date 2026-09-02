@@ -67,19 +67,19 @@
   </button>
   <nav>
      <ul>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="HTML/contact.html">Contact</a></li>
         <li>
           <div class="subnav">
-            <a href="portfolio.html">Portfolio</a>
+            <a href="HTML/portfolio.html">Portfolio</a>
             <div class="subnav-content">
-              <a href="fotografie.html">Fotografie</a>
-              <a href="photoshop.html">Photoshop</a>
-              <a href="indesign.html">InDesign</a>
-              <a href="illustrator.html">Illustrator</a>
+              <a href="HTML/fotografie.html">Fotografie</a>
+              <a href="HTML/photoshop.html">Photoshop</a>
+              <a href="HTML/indesign.html">InDesign</a>
+              <a href="HTML/illustrator.html">Illustrator</a>
             </div>
           </div>
         </li>
-        <li><a href="over-mij.html">Over mij</a></li>
+        <li><a href="HTML/over-mij.html">Over mij</a></li>
     </ul>
   </nav>
 </header>
@@ -153,20 +153,7 @@
 </footer>
 
 
-<script>
-  const hamburger = document.querySelector(".hamburger");
-  const nav = document.querySelector("nav");
-  const subnav = document.querySelector(".subnav");
-  const subnavToggle = document.querySelector(".subnav-toggle");
-
-  hamburger.addEventListener("click", () => {
-    nav.classList.toggle("active");
-    hamburger.classList.toggle("active");
-    subnav.classList.remove("open");
-  });
-
-
-</script>
+<script src="hamburger.js" defer></script>
 
 </body>
 </html>
