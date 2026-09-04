@@ -52,6 +52,10 @@ p {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 25px;
+    margin-left: 125px;
+    margin-right: 125px;
+    opacity: 0.7;
+    color: black;
 
 }
 
@@ -181,7 +185,6 @@ p {
   }
 }
 
-@media (max-width: 768px) {
   nav {
     display: none;
     width: 100%;
@@ -245,7 +248,7 @@ p {
 }
 
 
-}
+
 
 @media(max-width: 600px) {
   .nav { padding: 0px 0px; }

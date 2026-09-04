@@ -185,7 +185,6 @@ label {
   }
 }
 
-@media (max-width: 768px) {
   nav {
     display: none;
     width: 100%;
@@ -247,7 +246,7 @@ label {
     transform: rotate(180deg);
   }
 }
-}
+
 
 @media(max-width: 600px) {
   .nav { padding: 0px 0px; }
