@@ -336,7 +336,6 @@ a {
   }
 }
 
-@media (max-width: 768px) {
   nav {
     display: none;
     width: 100%;
@@ -412,7 +411,6 @@ a {
     margin-left: 0px;
   }
 
-}
 
 @media(max-width: 600px) {
   .hero h1 {
