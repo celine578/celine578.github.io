@@ -66,3 +66,140 @@ h3 {
 }
 
 
+
+/* HAMBURGER MENU */
+
+.hamburger {
+  display: flex;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #355749;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #355749;
+  transition: all 0.3s ease;
+} 
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+
+
+/* MEDIA */
+
+@media (min-width: 769px) {
+  .hamburger {
+    display: none;
+
+  }
+
+    .subnav:hover .subnav-content {
+    display: block;
+  }
+}
+
+ @media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    margin: 50px; 
+  }
+}
+
+  @media (hover: none) {
+  ul li a:hover {
+    transform: none;
+    font-weight: normal;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    width: 100%;
+  }
+
+  nav.active {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #FAF9F0;
+    z-index: 999;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  nav li {
+    width: 100%;
+    border-bottom: 1px solid rgba(53,87,73,0.12);
+  }
+
+  nav ul li a {
+    padding: 16px 30px;
+    text-align: left;
+    right: 0;
+    font-size: 17px;
+  }
+
+  .subnav-content {
+    display: none;
+    flex-direction: column;
+    background-color: #f2f0e6;
+  }
+
+  .subnav.open .subnav-content {
+    display: flex;
+  }
+
+  .subnav-content a {
+    padding: 14px 45px;
+    font-size: 15px;
+  }
+
+  .subnav > a::after {
+    content: " ▾";
+    font-size: 22px;
+    float: right;
+    transition: transform 0.2s ease;
+  }
+
+  .subnav.open > a::after {
+    transform: rotate(180deg);
+  }
+}
+
+
+@media(max-width: 600px) {
+  .nav { padding: 0px 0px; }
+  .ul li a { padding: 5px 6px; margin: 0px }
+  .footer-lager { padding: 0px 0px; margin-top: 45px; }
+  .body { text-align: center; left: 20px; }
+  #hamburger { margin: 50px; }
+  img { width: 100%; height: auto; padding-left: 15px; padding-right: 15px; padding-bottom: 15px; }
+  .foto-tekst { display: block; padding-left: 15px; padding-right: 15px; }
+    .foto-tekst::after { display: block; ; }
+  h1 { margin-bottom: 20px; }
+}

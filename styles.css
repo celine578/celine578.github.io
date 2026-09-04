@@ -430,10 +430,10 @@ a {
   .nav { padding: 0px 0px; }
   .ul li a { padding: 5px 6px; margin: 0px }
   .hero { padding: 60px 20px 0px; }
-  .projects { padding: 40px 20px 80px; }
+  .projects { padding: 40px 20px 0px; }
   .grid { grid-template-columns: 1fr; }
   .img { width: 100%; height: auto; }
-  .footer-lager { padding: 0px 0px; margin-top: 0px; }
+  .footer-lager { padding: 0px 0px; margin-top: 45px; }
   .body { text-align: center; left: 20px; }
   .sectionprojects { padding: 40px 20px 10px 0px; }
   .grid { padding: 12px}
